@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio Website</title>
+		<!-- BootStrap4 CSS Link-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<style>
+			body{
+/*					background: #f5d9d5;*/
+					background: #1D4350;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					color: white;
+				}
+			h2,p{
+				font-size: 1.8rem;
+				font-family: "Nunito",sans-serif;
+				font-weight: 100;
+			}
+			.navbar-light .navbar-brand{
+				color:white;
+			}
+			
+			.navbar-light .navbar-brand:hover{
+				color: #aa0000;
+			}
+			
+			.navbar-light .nav-item .nav-link{
+				color:white;
+			}
+			
+			.navbar-light .nav-item .nav-link:hover{
+				color:#aa0000;
+			}
+			
+			.navbar-light .navbar-nav .active .nav-link,h2{
+				color: white;
+				font-weight: bold;
+			}
+			
+			.extra-margin{
+				margin-bottom: 50px;	
+			}
+			
+			.douglas{
+				width: 100%;
+				height: 100%;
+			}
+			
+			
+			.scrolled{
+				background-color: #87aec8;
+			}
+			
+			.collage{
+				width:95%;
+				margin-bottom: 4%;
+				
+			}
+			
+			.current{
+				font-weight: bold;
+			}
+			
+			.reduce{
+				height:200px;
+			}
+					
+			
+			@media(max-width:1200px){
+				h2,p{
+					font-size: 1.5rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+					  <a class="navbar-brand text-white" href="Jas-Portfolio.html">Home</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a class="nav-link text-white" href="Education.html">Education <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-white current" href="Experience.html">Experience</a>
+					      </li>
+					  </div>
+					</nav>
+		
+		<!--Content of the web page-->		
+		<div class="container-fluid px-0">
+			<div class="row align-items-center border">
+				<div class="col-lg-6">
+					<img id="infosys" class="img-fluid" src="infosys.PNG"></img>
+				</div>
+				<div class="col-lg-3">
+					<div class="row">
+						<img class="img-fluid collage" src="catamaran.PNG"/>
+						<img class="img-fluid collage reduce" src="fortisbc.PNG"/>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="row">
+						<img class="img-fluid collage" src="download.jfif"/>
+					</div>
+				</div>
+			</div>
+			<div class="row"></div>
+			<div class="row align-items-center extra-margin">
+				<div class="col-lg-6">
+					<div class="d-none d-lg-block">
+					<h2 class="text-center">Associate Software Developer</h2>
+					<p class="text-center">(Dec 2019 - Mar 2020)<ul><li>Participating in the requirement gathering and analyzing process, by understanding the client's needs and come up with the optimal solution</li><li>Fixing the bugs on daily basis and deploying the updated modules as well.</li><li>Testing the whole software for potential bugs and mitigating the dead - ends.</li><li>Working on development on various on - going processes.</li></ul></p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img class="img-fluid" src="catamaran.PNG">
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid px-0">
+			<div class="row align-items-center extra-margin">
+				<div class="col-md-6 order-2 order-md-1">
+					<img class="img-fluid" src="fortisbc.PNG">
+				</div>
+				<div class="col-md-6 order-1 order-md-2">
+					<h2 class="text-center">Co-op Infomation Systems Technician</h2>
+					<p class="text-center">(Jan 2019 - Aug 2019)<ul><li>Providing technical support to FortisBC employees all across the regions.</li><li>Acquired knowledge of project understanding by working in their ongoing projects of Domain Migration and Exchange Online and Intune.</li><li>Working on developing their internal service request portal using which employees can request for assets needed by them. The portal request is already connected with the asset management tool which automatically decreases the asset number available in the tool.</li><li>Working on asset management tools like Service Manager Console to track the assets.</li><li>Imaging various systems and configuring them according to the user requirements.</li></ul></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid px-0">
+			<div class="row align-items-center extra-margin">
+				<div class="col-lg-6 order-1 order-md-1">
+				<h2 class="text-center">Systems Engineer</h2>
+				<p class="text-center">(July 2016 - Nov 2017 & Intern Jan 2016 - May 2016)<ul><li>I started my term as Systems Software and worked along my team in developing the platform for them to automate the system for the client Telstra (Australian Communication Company). We worked on front end of the system to provide the users with easily accessible information using different technologies like C#, .Net, Java API, thick client automation, selenium, mshtml.</li><li>During this term, I learnt how to work on different phases of Software life cycle, starting from the Requirement gathering till all the way to implementation and maintenance</li><li>During 4-month additional internship, they prepared us for the live situations of projects and made our core concepts clear and stronger. We were provided with the mentors and under their guidance, we as a team, implemented the project “Online Complaint Registration Portal” using concept which they taught us such as programming logics, database concepts and few features we had implemented by ourselves such as Google map API to locate nearest 5 police stations.</li></ul></p>
+					
+				</div>
+				<div class="col-lg-6 order-2 order-md-2">
+					<img class="img-fluid" src="infosys.PNG">
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid px-0">
+			<div class="row align-items-center extra-margin">
+				<div class="col-lg-6 order-1 order-md-2">
+				<h2 class="text-center">Teaching Assistant</h2>
+				<p class="text-center">(Sep 2019 - Dec 2019 & Sep 2018 - Dec 2018)<ul><li>Delivering excellence in providing students the best knowledge of the courses</li><li>I generally concentrate over student’s idea regarding choosing a specific way of implementation and ask them if they are understanding the concepts. In case of any doubts, I try myself to make them understand by giving different examples, how each line of code works and in which sequence</li></ul></p>
+					
+				</div>
+				<div class="col-lg-6 order-2 order-md-1">
+					<img class="img-fluid douglas" src="download.jfif">
+				</div>
+			</div>
+		</div>
+		
+		<!-- BootStrap4 JavaScript Link-->
+		 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		 <script>
+			$(function(){
+				$(document).scroll(function(){
+					var $nav=$("nav");
+					$nav.toggleClass("scrolled",$(this).scrollTop() > $nav.height());
+				})
+			})
+		</script>
+	</body>
+</html>
