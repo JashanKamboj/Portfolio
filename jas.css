@@ -1,0 +1,112 @@
+body{
+	padding: 0;
+	
+}
+.firstSection{
+	height: 47rem;
+	background: #1D4350;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: black;
+	width: 100%;
+}
+.container-fluid{
+	padding: 0;
+}
+.row{
+	height:100%;
+}
+h1,p{
+	width: 100%;
+	transition: 0.2s linear;
+}
+
+.stylep{
+	font-weight:bold;
+	font-size: 1.5rem;
+}
+
+.col-lg-4:nth-child(n),.col-sm-6:nth-child(n){
+	background-color: #dbdbdb;
+	color:#3a6073;
+}
+
+.col-lg-4:nth-child(n) a,.col-sm-6:nth-child(n) a{
+	background-color: #dbdbdb;
+	color:#3a6073;
+}
+
+.col-lg-4:nth-child(2n),.col-sm-6:nth-child(2n){
+	background-color: #3a6073;
+	color: #dbdbdb;
+	text-decoration: none;
+}
+
+.col-lg-4:nth-child(2n) a,.col-sm-6:nth-child(2n) a{
+	background-color: #3a6073;
+	color: #dbdbdb;
+	text-decoration: none;
+}
+
+.col-lg-4 span,.col-sm-6 span{
+	background-color: #3a6073;
+	width:100%;
+	height:0;
+	color: #dbdbdb;
+	margin-bottom: 9%;
+	transition: 0.2s linear;
+}
+
+.col-lg-4:nth-child(2n) span,.col-sm-6:nth-child(2n) span{
+	background-color: #dbdbdb;
+	color: #3a6073;
+}
+
+
+
+.col-lg-4:hover span,.col-sm-6:hover span{
+	height:25%;
+}
+
+.col-lg-4:hover a,.col-sm-6:hover a{
+	text-decoration: none;
+}
+
+.col-lg-4:hover div,.col-sm-6:hover div{
+	text-size:1rem;
+}
+
+#endpart{
+	height: 5rem;
+	background: #1D4350;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#copywrite{
+	margin:10px;
+	padding-top: 50px;
+}
+
+.btn{
+	color: white;
+	border: #3a6073 2px solid;
+	font-weight: bold;	
+	background-color: #3a6073;
+}
+
+.btn:hover{
+	color:#3a6073;
+	background-color: white;
+}
+
+.navbar-brand:hover, .nav-item:hover{
+	font-weight: bold;
+}
+
+.current{
+		font-weight: bold;
+	}
+
+
+
