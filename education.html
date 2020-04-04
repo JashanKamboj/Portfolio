@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Portfolio Website</title>
+		<!-- BootStrap4 CSS Link-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<style>
+			body{
+/*					background: #f5d9d5;*/
+					background: #1D4350;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					color: white;
+				}
+			h2,p{
+				font-size: 1.8rem;
+				font-family: "Nunito",sans-serif;
+				font-weight: 100;
+			}
+			.navbar-light .navbar-brand{
+				color:white;
+			}
+			
+			.navbar-light .navbar-brand:hover{
+				color: #aa0000;
+			}
+			
+			.navbar-light .nav-item .nav-link{
+				color:white;
+			}
+			
+			.navbar-light .nav-item .nav-link:hover{
+				color:white;
+			}
+			
+			.navbar-light .navbar-nav .active .nav-link,h2,span{
+				color: white;
+				font-weight: bold;
+			}
+			
+			.extra-margin{
+				margin-bottom: 50px;	
+			}
+			
+			.navbar{
+/*				background-color: #f5d9d5;*/
+
+			}
+			
+			.scrolled{
+				background-color: #87aec8;
+			}
+			
+			img{
+				width:90%;
+				height:90%;
+				margin-left: 10px;
+			}
+			
+			.current{
+				font-weight: bold;
+			}
+			
+			@media(max-width:1200px){
+				h2,p{
+					font-size: 1.5rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Navbar-->
+		<nav class="navbar navbar-expand-lg navbar-dark">
+					  <a class="navbar-brand text-white" href="Jas-Portfolio.html">Home</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a class="nav-link text-white current" href="Education.html">Education <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link text-white" href="Experience.html">Experience</a>
+					      </li>
+					  </div>
+					</nav>
+		
+		<!--Content of the web page-->		
+		<div class="container-fluid px-0">
+			<div class="row align-items-center extra-margin">
+				<div class="col-lg-6">
+					<div class="d-none d-lg-block">
+					<h2 class="text-center">Douglas College</h2>
+					<p class="text-center">I have graduated from <span>Douglas College in Post-Baccalaureate in Computer and Infomation Systems (Specialization in Emerging Technologies) January 2020</span>. It includes 8-months co-op at FortisBC Energy Inc. as well, as Co-op Infomation Systems Technician. Throughout the course I have been working on projects including few Android projects (Online selling and buying application, pocket gym and diet), various Java, php, JavaScript, HTML, CSS and networking hand-on projects.</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<img class="img-fluid" src="download.jfif">
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid px-0">
+			<div class="row align-items-center extra-margin">
+				<div class="col-md-6 order-2 order-md-1">
+					<img class="img-fluid" src="punjabiUni.jfif">
+				</div>
+				<div class="col-md-6 order-1 order-md-2">
+					<h2 class="text-center">Punjabi University</h2>
+					<p>I have completed my <span>in Computer Engineering June 2016</span>. This includes 4-month inernship at Infosys Limited which further turned into my first full-time job as Systems Engineer. During my Bachelors, I have been grasping the core concepts of computing including Data Structures, Algorithms, object oriented programming languages, networking concepts. During this term, I have worked on one minor project of offline gaming platform developed using Core Java(major part Applets) and final project was online complaint registration system in which technologies like .Net, MVC, C#, SQL, Google Maps API were included.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- BootStrap4 JavaScript Link-->
+		 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		 <script>
+			$(function(){
+				$(document).scroll(function(){
+					var $nav=$("nav");
+					$nav.toggleClass("scrolled",$(this).scrollTop() > $nav.height());
+				})
+			})
+		</script>
+	</body>
+</html>
